@@ -1,0 +1,11 @@
+[opener]
+edit = [
+  { run = "/usr/bin/nvim %s", block = true, desc = "Neovim" }
+]
+
+[open]
+rules = [
+  { mime = "text/*", use = "edit" },
+  { name = "*", use = "edit" }
+]
+

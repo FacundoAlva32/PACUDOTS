@@ -1,0 +1,37 @@
+# ~/.config/starship.toml
+
+# Formato general del prompt: añade bloques con fondos
+format = """
+[](#e5e9f0)\
+$os\
+$directory\
+[ ](#e5e9f0)\
+$git_branch\
+$character"""
+
+[os]
+disabled = false
+# Fondo gris muy claro (#e5e9f0) y texto negro
+style = "bg:#e5e9f0 fg:black"
+format = "[$symbol]($style)"
+
+[os.symbols]
+Arch = "⚚"
+
+[directory]
+# Mismo fondo para que parezca una sola pastilla larga
+style = "bg:#e5e9f0 fg:black"
+format = "[ $path ]($style)"
+truncation_length = 3
+fish_style_pwd_dir_length = 1
+
+[git_branch]
+# Una pastilla separada para Git con un tono azulado muy claro
+symbol = " "
+style = "bg:#d8dee9 fg:black"
+format = "[[]($style)$symbol$branch[]($style)]($style) "
+
+[character]
+# El puntero fuera de las pastillas para que se vea limpio
+success_symbol = "[ ❯](bold black)"
+error_symbol = "[ ❯](bold red)"

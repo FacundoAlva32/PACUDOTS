@@ -1,0 +1,35 @@
+[Default Applications]
+image/png=vimiv
+image/jpeg=vimiv
+image/webp=vimiv
+image/gif=vimiv
+application/x-compressed-tar=gvim.desktop
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+
+[Added Associations]
+image/png=vimiv.desktop;
+application/x-compressed-tar=gvim.desktop;
+x-scheme-handler/http=firefox.desktop;zen.desktop;
+x-scheme-handler/https=firefox.desktop;zen.desktop;
+x-scheme-handler/chrome=firefox.desktop;zen.desktop;
+text/html=zen.desktop;firefox.desktop;
+application/x-extension-htm=zen.desktop;firefox.desktop;
+application/x-extension-html=zen.desktop;firefox.desktop;
+application/x-extension-shtml=zen.desktop;firefox.desktop;
+application/xhtml+xml=zen.desktop;firefox.desktop;
+application/x-extension-xhtml=zen.desktop;firefox.desktop;
+application/x-extension-xht=zen.desktop;firefox.desktop;
+application/pdf=zen.desktop;libreoffice-draw.desktop;
+application/vnd.oasis.opendocument.text=zen.desktop;
+video/mp4=mpv.desktop;vimiv.desktop;org.kde.haruna.desktop;com.github.rafostar.Clapper.desktop;
+image/jpeg=org.gnome.Loupe.desktop;

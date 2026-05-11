@@ -1,0 +1,89 @@
+/* Fuente y Reset */
+* {
+    border: none;
+    border-radius: 12px ;
+    font-family: "JetBrainsMono Nerd Font", "Roboto", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* LA BARRA PRINCIPAL (Azul Profundo Translúcido) */
+window#waybar {
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+}
+
+/* --- LOGO (Izquierda) --- */
+#custom-arch {
+    color: #ffffff; 
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+/* --- WORKSPACES (Puntos) --- */
+#workspaces {
+    background: transparent;
+    margin-right: 15px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #dadada; /* Gris oscuro (inactivos) */
+    font-size: 10px; /* Puntos pequeños */
+}
+
+#workspaces button.active {
+    color: #ffffff; /* Azul (activo) */
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: #ffffff;
+}
+
+/* --- ICONOS DERECHA --- */
+#pulseaudio{
+    color: #ffffff;
+    padding: 0 12px;
+}
+
+#tray {
+    color: #ffffff;
+}
+
+#clock {
+    color: #ffffff;
+    font-weight: bold;
+    margin:8px 12px;
+    border-radius: 15px;
+    /*background: rgba(255, 255, 255, 0.1); */
+    padding: 5px 20px;
+}
+
+#custom-power {
+    color: #ffffff;   
+    padding: 0px 5px;
+}
+
+#custom-spotify {
+    min-width: 20px;
+    /*background: rgba(255, 255, 255, 0.2); */
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 15px; /* Bordes redondos tipo pastilla */
+    margin: 8px 12px;
+    font-weight: bold;
+    font-size: 12px;
+}
+#custom-wallpaper {
+    color: #ffffff;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+#network{
+  color: #ffffff;
+  font-size: 15px;
+  padding: 0px 5px;
+}

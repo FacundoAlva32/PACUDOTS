@@ -1,0 +1,29 @@
+
+[manager.ui]
+border = { fg = "red" }
+cwd    = { fg = "white", bold = true }
+hovered  = { fg = "black", bg = "red", bold = true }
+selected = { fg = "black", bg = "red" }
+
+[status.ui]
+mode_normal = { fg = "black", bg = "red", bold = true }
+mode_select = { fg = "black", bg = "red", bold = true }
+
+[tabs.ui]
+active   = { fg = "black", bg = "red", bold = true }
+inactive = { fg = "gray" }
+
+[filetype]
+rules = [
+  { name = "*/", fg = "white", bold = true },
+  { name = "*",  fg = "white" }
+]
+
+[palette]
+background = "#000000"
+foreground = "#f2f2f2"
+red        = "#ff4d4d"
+red_soft   = "#ff6b6b"
+gray       = "#a0a0a0"
+black      = "#000000"
+white      = "#ffffff"
