@@ -64,15 +64,15 @@ window#waybar {
 
 #custom-power {
     color: #ffffff;   
-    padding: 0px 5px;
+    padding: 0px 3px;
+    padding-right : 10px;
 }
-
-#custom-spotify {
+#custom-music {
     min-width: 20px;
     /*background: rgba(255, 255, 255, 0.2); */
     color: #ffffff;
     padding: 5px 20px;
-    border-radius: 15px; /* Bordes redondos tipo pastilla */
+    border-radius: 15px; 
     margin: 8px 12px;
     font-weight: bold;
     font-size: 12px;

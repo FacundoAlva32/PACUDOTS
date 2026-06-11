@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="/home/pacu/Downloads/wallpaper"
+DIR="/home/pacu/.config/wallpaper"
 MENU_FILE="/tmp/wallpaper_menu"
 THEME="$HOME/.config/rofi/wallpaper.rasi"
 
@@ -13,5 +13,5 @@ done >"$MENU_FILE"
 SELECCION=$(cat "$MENU_FILE" | rofi -dmenu -i -p "Fondo de Pantalla" -theme "$THEME")
 
 if [ -n "$SELECCION" ]; then
-  swww img "$DIR/$SELECCION" --transition-type grow --transition-fps 60
+  awww img "$DIR/$SELECCION" --transition-type grow --transition-fps 60
 fi

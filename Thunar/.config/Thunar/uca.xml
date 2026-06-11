@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
-	<icon>utilities-terminal</icon>
-	<name>Open Terminal Here</name>
+	<icon></icon>
+	<name>Abrir con neovim</name>
 	<submenu></submenu>
-	<unique-id>1767813987540896-1</unique-id>
-	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
-	<description>Example for a custom action</description>
-	<range></range>
+	<unique-id>1778730768969366-1</unique-id>
+	<command>kitty nvim %f</command>
+	<description></description>
+	<range>*</range>
 	<patterns>*</patterns>
-	<startup-notify/>
-	<directories/>
+	<text-files/>
 </action>
 </actions>

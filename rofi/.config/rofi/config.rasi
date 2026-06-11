@@ -11,7 +11,7 @@ configuration {
     font:                        "JetBrainsMono Nerd Font 11";
     bg:                          #000000; 
     fg:                          #ffffff;
-    bg-selected:                 #ffffff03;
+    bg-selected:                 #ffffff06;
 }
 
 /*****----- Main Window -----*****/
@@ -44,7 +44,7 @@ imagebox {
     expand:                      true;
     background-color:            transparent;
     /* Ajusta tu ruta aquí */
-    background-image:            url("Downloads/icons/beatris.jpg", height);
+    background-image:            url("/home/pacu/.config/wallpaper/icons/catfumador.png", height);
     border-radius:               18px 0px 0px 18px;
 }
 
@@ -75,14 +75,14 @@ prompt {
 entry {
     background-color:            transparent;
     text-color:                  inherit;
-    placeholder:                 "Buscalo papi";
+    placeholder:                 "Buscar";
     placeholder-color:           inherit;
 }
 
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     1; /* Puse 2 columnas para aprovechar el espacio ancho */
+    columns:                     1; 
     lines:                       7;
     cycle:                       true;
     scrollbar:                   false;

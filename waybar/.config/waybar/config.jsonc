@@ -4,8 +4,7 @@
   "spacing": 0,
   "layer": "top",
     "position": "top",
-    "margin": 10, // Esto añade 10px de espacio arriba, abajo, izquierda y derecha
-
+    "margin": 7,
 
   "modules-left": [
     "custom/arch",
@@ -13,14 +12,15 @@
     "clock",
   ],
   "modules-center": [
-    "custom/spotify"
+    "custom/music"
 
   ],
   "modules-right": [
+    "pulseaudio#microphone",
     "pulseaudio",
     "tray",
     "custom/wallpaper",
-    "custom/power"
+    "custom/power", 
   ],
 
   "custom/arch": {
@@ -37,14 +37,19 @@
           "8": "󰓇 ",
       }
   },
-
-  "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-icons": {
-      "default": ["", "", ""]
-    },
-    "on-click": "pavucontrol"
+"pulseaudio": {
+  "format": "{icon} {volume}%",
+  "format-muted": "󰖁 muted",
+  "format-icons": {
+    "default": ["", "", ""]
   },
+  "on-click": "pavucontrol"
+},
+"pulseaudio#microphone": {
+  "format": "{format_source}",
+  "format-source": "󰍬",
+  "format-source-muted": "󰍭 ESTÁS MUTEADO!!!"
+},
   "clock": {
     "timezone": "America/Argentina/Buenos_Aires",
     "format": "{:%H:%M}",
@@ -54,7 +59,7 @@
   "tray": {
     "icon-size":18,
     "spacing":10
-
+  
   },
 
   "custom/power": {
@@ -62,15 +67,23 @@
     "on-click": "wlogout || rofi -show power-menu"
   },
 
-  "custom/spotify": {
-    "format": "  {}",
-    "max-length": 40,
+  //"custom/spotify": {
+    //"format": "  {}",
+    //"max-length": 40,
+    //"interval": 1,
+    //"exec": "playerctl -p spotify metadata --format '{{artist}} - {{title}}' 2>/dev/null || echo ''",
+    //"on-click": "playerctl -p spotify play-pause",
+    //"on-scroll-up": "playerctl next",
+    //"on-scroll-down": "playerctl previous",
+  //},
+"custom/music": {
+    "format": "{}",
     "interval": 1,
-    "exec": "playerctl -p spotify metadata --format '{{artist}} - {{title}}' 2>/dev/null || echo ''",
-    "on-click": "playerctl -p spotify play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous",
-  },
+    "exec": "playerctl --player=chromium metadata --format '󰎆 {{artist}} - {{title}}' 2>/dev/null",
+    "on-click": "playerctl --player=chromium play-pause",
+    "on-scroll-up": "playerctl --player=chromium next",
+    "on-scroll-down": "playerctl --player=chromium previous"
+},
 
   "custom/wallpaper": {
     "format": " ",
@@ -84,6 +97,6 @@
     //"format-ethernet": "󰖩 ",
     //"format-disconnected": "󰖪 ",
     //"tooltip": true
-  //}
+  }
 
 }

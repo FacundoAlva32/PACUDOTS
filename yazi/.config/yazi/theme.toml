@@ -15,8 +15,8 @@ inactive = { fg = "gray" }
 
 [filetype]
 rules = [
-  { name = "*/", fg = "white", bold = true },
-  { name = "*",  fg = "white" }
+  { mime = "*/", fg = "white", bold = true },
+  { mime = "*",  fg = "white" }
 ]
 
 [palette]
